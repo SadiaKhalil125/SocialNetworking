@@ -1,0 +1,145 @@
+﻿@model Bonded.Models.ViewModels.PostDetailsViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Post Details</title>
+    <style>
+        html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: linen;
+        }
+
+        .main-container {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        }
+
+        footer {
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        }
+
+        .profile-container {
+        margin-top: 40px;
+        margin-bottom: 70px;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 600px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        }
+
+        h3 {
+        font-weight: bold;
+        color: #444;
+        text-align: center;
+        }
+
+        .btn-dark {
+        background-color: #000;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+        }
+
+        .btn-dark:hover {
+        background-color: #004080;
+        color: white;
+        transform: scale(1.05);
+        }
+
+        .dropdown-menu {
+        right: 0;
+        left: auto;
+        }
+
+        /* Ensure the arrow and other elements stay inside the container */
+        .header-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container mt-5">
+        <div class="profile-container">
+            <div class="header-actions">
+                <!-- Left side: Arrow -->
+                <form method="get" action="@Url.Action("Profile", "User")">
+                    <a href="/User/DetailedProfile" class="btn rounded-4"style="color:black;font-size:large"><b><i class="bi bi-arrow-left"></i></b></a>
+                </form>
+
+                <!-- Post by user -->
+                <h3 class="flex-grow-1">Post by @Model.Post.Poster.UserName</h3>
+
+                <!-- Right side: Edit Dropdown -->
+                @if (Model.LoginnedUser)
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Edit
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="/Post/ShowEditForm?postId=@Model.Post.Id">Edit Post</a></li>
+                            <li><a class="dropdown-item" href="/Post/DeletePost?postId=@Model.Post.Id">Delete Post</a></li>
+                        </ul>
+                    </div>
+                }
+            </div>
+
+            <div class="text-center mt-3">
+                <img src="@Model.Post.ImagePath" alt="Post Image" class="post-image img-fluid" />
+            </div>
+
+            <div class="post-content mt-3">
+                <p>@Model.Post.Content</p>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                <form asp-action="ToggleLike" asp-controller="Like" method="post">
+                    <input type="hidden" name="postId" value="@Model.Post.Id" />
+                    <button style="border-radius:20px" type="submit" class="btn @((Model.LikedByUser ? "btn-danger" : "btn-primary"))">
+                        <i class="@((Model.LikedByUser ? "bi bi-heart-fill" : "bi bi-heart"))"></i>
+                        @((Model.LikedByUser ? "Unlike" : "Like"))
+                    </button>
+                </form>
+            </div>
+
+            <div class="text-center mt-3">
+                <p><strong>Likes:</strong> @Model.LikeCount</p>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="/Comment/AddComment?postId=@Model.Post.Id" class="btn btn-dark">Comment</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

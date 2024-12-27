@@ -1,0 +1,150 @@
+﻿@model Bonded.Models.RegisterViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" />
+    <title>Signup Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensure body and html take up the full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: linen;
+            /* Replace with your background image if needed */
+            background-size: cover;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 80px;
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-bottom:70px;/* Adds space above and below the container */
+            width: 500px; /* Sets a consistent width for the container */
+        }
+
+            .signup-container h2 {
+                font-weight: bold;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .signup-container .form-control {
+                border-radius: 5px;
+            }
+
+        .signup-btn {
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+            .signup-btn:hover {
+                background-color: #004080;
+                color: #fff;
+            }
+
+
+            .signup-container .form-text {
+                font-size: 0.875rem;
+                color: #6c757d;
+            }
+
+            .signup-container .text-center a {
+                color: #000;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .signup-container .text-center a:hover {
+                    color: #004080;
+                    text-decoration: underline;
+                }
+
+        footer {
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="signup-container">
+            <h2>Create an Account</h2>
+            <form method="post" asp-action="Register" asp-controller="User">
+               
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label fw-bolder">Username</label>
+                    <input asp-for="UserName" type="text" name="UserName" id="Username" class="form-control" placeholder="Enter username" required />
+                    <span asp-validation-for="UserName"></span>
+                  
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label fw-bolder">Email Address</label>
+                    <input asp-for="Email" type="email" name="Email" id="Email" class="form-control" placeholder="Enter email" required />
+                    <span asp-validation-for="Email"></span>
+                  
+                    <div class="form-text">
+                        We'll never share your email with anyone else.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label fw-bolder">Password</label>
+                    <input asp-for="Password" type="password" name="Password" id="Password" class="form-control" placeholder="Enter password" required />
+                    <span asp-validation-for="Password"></span>
+                    <div class="form-text">
+                        Must be 8-20 characters long, include numbers, alphabets and special characters.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="ConfirmPassword" class="form-label fw-bolder">Confirm Password</label>
+                    <input asp-for="ConfirmPassword" type="password" name="ConfirmPassword" id="Password" class="form-control" placeholder="Enter password" required />
+                    <span asp-validation-for="ConfirmPassword"></span>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                    <label class="form-check-label" for="termsCheck">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+
+                <div class="text-center mb-3">
+                    <a href="@Url.Action("Login", "User")">Already have an account? Login</a>
+                </div>
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn signup-btn">SIGN UP</button>
+                </div>
+                @if (ViewData["message"] != null)
+                {
+                    <div class="btn-danger">ViewData["message"]</div>
+                }
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

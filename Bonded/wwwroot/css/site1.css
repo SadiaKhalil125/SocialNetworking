@@ -1,0 +1,25 @@
+
+
+@media screen and (max-width: 800px) {
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        justify-content: center; /* Center the buttons vertically */
+    }
+
+        .button-group a,
+        .button-group form {
+            width: 100%; /* Make buttons full-width */
+            max-width: 300px; /* Optional: restrict the max width */
+            margin-bottom: 10px; /* Space between buttons */
+        }
+
+    .btn-custom {
+        width: 100%;
+    }
+
+    .button-group a:last-child,
+    .button-group form:last-child {
+        margin-bottom: 0; /* Remove bottom margin from the last button */
+    }
+}

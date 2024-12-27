@@ -1,0 +1,29 @@
+﻿@* @model List<Post>
+
+<div class="row gx-2 ">
+    @foreach (var post in Model)
+    {
+        <div class="col-4">
+            <a href="/Post/ViewPost?id=@post.Id">
+                <img style="height:150px; width:200px;object-fit:cover" src="@post.ImagePath" alt="Post Image" class="img-fluid me-2 border" />
+            </a>
+        </div>
+    } 
+</div>
+ *@
+
+@model List<Post>
+
+<div class="row gx-2 gy-2">
+    @foreach (var post in Model)
+    {
+        <div class="col-4">
+            <a href="/Post/ViewPost?id=@post.Id">
+                <div class="image-container">
+                    <img src="@post.ImagePath" alt="Post Image" class="img-fluid" />
+                </div>
+            </a>
+        </div>
+    }
+</div>
+

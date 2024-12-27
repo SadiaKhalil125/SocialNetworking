@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bonded</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Bonded.styles.css" asp-append-version="true" />
+
+    <style>
+
+        body {
+            position: relative;
+            min-height: 100vh; /* Full viewport height */
+
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .nav-item .dropdown-toggle::after {
+            display: none !important;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container-fluid">
+            <div class="row border-bottom pt-2 pb-2 d-flex justify-content-center align-items-center" style="background-color:linen;">
+
+
+
+
+                <div class="col-auto">
+                    <a href="#" style="font-family:'Raleway', Arial, sans-serif; color:black" class="text-decoration-underline">Welcome to our website!</a>
+                </div>
+            </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg border-bottom" style="color:white; background-color:black;">
+                <div class="container-fluid pt-2 pb-2">
+                        <h2 class="ps-4"> <i style="color:linen" class="bi bi-bootstrap"></i></h2>
+                    <a class="navbar-brand ps-1" href="/Home/Index">
+
+                            <h2 class="text-decoration-underline" style="font-family:'Raleway', Arial, sans-serif;color:White;" width="100" height="60">ONDED</h2>
+                    </a>
+
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 text-center small">
+                            <li class="nav-item">
+                                    <a style="color:White; font-size:medium" class="nav-link pe-1" href="/User/DetailedProfile">
+                                    Profile
+                                </a>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                    <a style="color:White; font-size:medium" class="nav-link pe-2" href="/User/Dashboard">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color:White; font-size:medium" class="nav-link pe-1" href="/Notification/AllNotifications">Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button style="color:White; font-size:medium" class="btn dropdown-toggle ps-2 pe-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Signin
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/User/Login">Login</a></li>
+                                        <li><a class="dropdown-item" href="/User/Register">Signup</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button style="color:White; font-size:medium" class="btn dropdown-toggle display-6 ps-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Settings
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/User/DeleteAccount">Delete account</a></li>
+                                        <li><a class="dropdown-item" href="/User/Profile">Edit Profile</a></li>
+                                        <li><a class="dropdown-item" href="/User/Logout">Logout</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+
+                    <div class="d-flex ms-auto align-items-center justify-content-evenly">
+
+                        <!-- Search Button -->
+                        <form class="d-flex align-items-center" role="search">
+                            <button type="button" style="color: White;" class="btn d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                                <i style="color: White;" class="bi bi-search-heart-fill"></i>
+                                <span style="color: White;" class="ms-2">Search</span>
+                            </button>
+                        </form>
+
+
+
+                            <a href="https://www.threads.net/createbondswithbonded" class="text-decoration-none ms-0 me-3" style="color:black">
+                                <i style="color:White" class="bi bi-threads"></i>
+                            </a>
+                            <a href="/Chat/Index" class="text-decoration-none me-3" style="color:black">
+                                <i style="color:White" class="bi bi-chat-dots-fill"></i>
+                            </a>
+                            <a href="mailto:createbondswithbonded@gmail.com" class="text-decoration-none me-3" style="color:black">
+                                <i style="color:White" class="bi bi-envelope-fill "></i>
+                            </a>
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Offcanvas (Sliding Panel) -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasSearchLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasSearchLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-light">
+                <form method="post" action="/Home/Search">
+                    <div class="mb-3">
+                        <label for="searchInput" class="form-label">Search for people</label>
+                        <input type="text" class="form-control" name="searchTerm" id="searchInput" placeholder="Search...">
+                    </div>
+                        <button type="submit" class="btn btn-dark explore-btn">Search</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    </header>
+   
+    <div class="container ">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row  mt-2 pt-3 pb-3 ps-5 pe-5 align-content-center" style="min-height: 300px; background-color:black;color:white">
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class=" mb-2 nav-item" style="color:white">About Bonded</li>
+                        <li class="mb-2 nav-item" <a class="nav-link"style="color:white" href="/about">Our Story</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" style="color:white" href="/terms-of-service">Terms of Service</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" style="color:white" href="/privacy-policy">Privacy Policy</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" style="color:white" href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 nav-item" style="color:white">Join Us</li>
+                        <li class="mb-2 nav-item"><a class="nav-link" style="color:white" href="/User/Login">Sign In</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" style="color:white" href="/User/Register">Create Account</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class=" mb-2" style="color:white">
+                            Need personalized advice? Contact our team for a free consultation.
+                        </li>
+                        <li class="mb-2 nav-item">
+                            <a class="nav-link" style="color:white" href="/free-advisory">
+                                Bonded Free Advisory Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class=" mb-2" style="color:white">Bonded Connect</li>
+                        <li class="mb-2 nav-item">
+                            <a class="nav-link" style="color:white" href="/contact">
+                                International Platform
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

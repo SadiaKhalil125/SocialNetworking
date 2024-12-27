@@ -1,0 +1,95 @@
+/*html, body {
+    position:relative;
+  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/Picsart_24-11-26_20-13-53-838.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    position: relative;*/ /* Ensure the footer stays below content */
+/*bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}*/
+
+
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+/*footer {
+    bottom: 0;
+    width:100%;
+}*/
+/*header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;*/ /* Set the height of your header */
+    /*background-color: #333;
+    color: white;
+    z-index: 1000;
+}*/
+/* Apply the banner image styles */
+/* Apply the banner image styles */
+/*.banner-image {
+    width: 100%;
+    height: 600px;*/ /* You can adjust the height based on your requirement */
+    /*background-image: url('../images/stopppp.jpg');
+    background-size: cover;*/ /* Ensures the image covers the area */
+    /*background-position: center center;*/ /* Centers the image to resize equally from both sides */
+    /*background-repeat: no-repeat;
+}*/
+
+/* Responsive adjustments for smaller screens */
+/*@media screen and (max-width: 750px) {
+    .banner-image {
+        background-position: left center;*/ /* Ensures the image shrinks equally from both sides */
+    /*}
+}*/
+/*
+@font -face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: circular;
+    src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font -face {
+    font-weight: 700;
+    font-style: normal;
+    font-family: circular;
+    src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}
+*/
+/*html, body {
+    height: 100%;
+}*/
+/*
+.welcome-main {
+    height: 1000px; 
+    background-image: url(../images/Picsart_24-11-26_20-13-53-838.jpg);
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}*/

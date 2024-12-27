@@ -1,0 +1,241 @@
+﻿@model Bonded.Models.ViewModels.ChatViewModel
+@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Chat</title>
+    <style>
+        html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: linen;
+        }
+
+        footer {
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        }
+        .chat-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-width: 600px;
+        margin: 50px auto;
+        margin-top:80px;
+        margin-bottom:80px;
+
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-header {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 10px 10px 0 0;
+        }
+
+        .chat-header .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 8px;
+        }
+
+        .chat-header a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        }
+
+        .chat-box {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 15px;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .message {
+        display: flex;
+        align-items: flex-start;
+        margin: 10px 0;
+        }
+
+        .message.received {
+        justify-content: flex-start;
+        }
+
+        .message.sent {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: right; /* Align the text to the right */
+        margin-left: 5px; /* Push the message to the right */
+        }
+
+        .message .text {
+
+        max-width: 100%;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+        }
+
+        .message.sent .text {
+        background-color:skyblue; /* Background for sent messages */
+        color: white;
+        margin-left: auto; /* Align text on the right */
+        }
+
+        .message.received .text {
+        background-color: #e9ecef; /* Background for received messages */
+        color: #343a40;
+        }
+
+
+
+        .message img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 10px;
+        }
+
+        .send-message {
+        display: flex;
+        padding: 10px 15px;
+        background-color: white;
+        border-top: 1px solid #dee2e6;
+        }
+
+        .send-message textarea {
+        flex-grow: 1;
+        margin-right: 10px;
+        border-radius: 10px;
+        }
+
+        .send-message button {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        }
+
+        .message {
+        position: relative;
+        }
+
+        .message .delete-btn {
+        position: absolute;
+        top: 10px;
+        font-size: 15px;
+        color:darkgrey;
+        cursor: pointer;
+        }
+
+        .message .delete-btn:hover {
+        position: absolute;
+        top: 10px;
+        font-size: 15px;
+        color:black;
+        cursor: pointer;
+        }
+
+        .message.sent .delete-btn {
+        left: -5px; /* Position on the left for sent messages */
+        }
+
+        .message.received .delete-btn {
+        right: -5px; /* Position on the right for received messages */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <a style="text-decoration:none" href="@Url.Action("ViewOtherProfiles", "User", new { id = ViewBag.ReceiverId})">
+                <img src="@ViewBag.ProfilePicture" alt="Profile Picture" class="profile-picture">
+                @ViewBag.Username
+            </a>
+
+        </div>
+        
+        <!-- Chat Messages -->
+        <!-- Chat Messages -->
+        <div class="chat-box" id="chat-box">
+            @foreach (var message in Model.Messages)
+            {
+                <div class="message @(message.Sender.Id == ViewBag.CurrentUserId ? "sent" : "received")">
+                    <!-- Delete Button for Sent Messages -->
+                    @if (message.Sender.Id == ViewBag.CurrentUserId)
+                    {
+                        <a href="/Chat/DeleteMessage/?msgId=@message.Message.Id" class="delete-btn">
+                            <i class="bi bi-x-circle"></i>
+                        </a>
+                    }
+
+                    <img src="@message.Sender.ProfilePicture" alt="Profile Picture">
+                    <div class="text">
+                        @message.Message.Text
+                        <br>
+                        <small class="text-muted">@message.Message.Timestamp.ToString("hh:mm tt")</small>
+                    </div>
+
+                    <!-- Delete Button for Received Messages -->
+                    @if (message.Sender.Id != ViewBag.CurrentUserId)
+                    {
+                        <a href="/Chat/DeleteMessage/?msgId=@message.Message.Id" class="delete-btn">
+                            <i class="bi bi-x-circle"></i>
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+
+
+
+        <!-- Send Message -->
+        <form asp-action="SendMessage" method="post" class="send-message" onsubmit="scrollToBottom();">
+            <input type="hidden" name="chatId" value="@Model.ChatId" />
+            <input type="hidden" name="receiverId" value="@ViewBag.ReceiverId" />
+            <textarea class="form-control" name="text" placeholder="Type your message..." required></textarea>
+            <button class="btn btn-dark mt-1" type="submit">
+                <i class="bi bi-send"></i>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        // Automatically scroll to the bottom of the chat box
+        function scrollToBottom() {
+            var chatBox = document.getElementById("chat-box");
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+        window.onload = scrollToBottom;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

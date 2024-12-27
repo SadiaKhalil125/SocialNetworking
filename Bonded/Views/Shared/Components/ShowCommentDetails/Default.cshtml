@@ -1,0 +1,31 @@
+﻿@model List<Bonded.Models.ViewModels.CommentsDetailViewModel>
+
+<div class="search-results rounded ps-3 ">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var comm in @Model)
+        {
+            <div class="search-result-item pt-3 d-flex align-items-start justify-content-between border-bottom">
+                <a style="text-decoration:none; display:flex; align-items:center;" href="@Url.Action("ViewOtherProfiles", "User", new { id = comm.User.Id })">
+                    <img src="@comm.User.ProfilePicture" style="height:60px; width:60px;" alt="Profile Picture" class="profile-picture">
+                    <div class=" ps-2" style="color:black;">
+                        <b>@comm.User.UserName:</b> @comm.Comment.Content
+                    </div>
+                </a>
+
+                @if (@comm.CanUserDelete)
+                {
+                    <a class="ms-2 me-3 mt-4 align-items-center" style="display:flex; align-items:center;color:black;" href="/Comment/DeleteComment?CommentId=@comm.Comment.Id&PostId=@comm.Comment.PostId">
+                        <i class="bi bi-x-circle"></i>
+                    </a>
+                }
+            </div>
+        }
+    }
+    else
+    {
+        <div class="no-results fw-bolder rounded border p-3 me-4"style="color:dimgrey">
+            No comments found.
+        </div>
+    }
+</div>

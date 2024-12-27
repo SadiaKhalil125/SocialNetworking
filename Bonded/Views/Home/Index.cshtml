@@ -1,0 +1,535 @@
+﻿@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage</title>
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh; /* Full viewport height */
+           
+        }
+
+
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Global Font Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: linen;
+        }
+
+        .explore-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .explore-text {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Button Styles */
+        /* Button Styles */
+        .explore-btn {
+            background-color: #333; /* Dark background */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            border: 0; /* No border */
+            transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for all properties */
+            position: relative; /* To enable smooth gliding */
+        }
+
+            /* Hover Effect */
+            .explore-btn:hover {
+                background-color: grey; /* Lighter dark background */
+                color: white;
+                transform: translateY(-5px); /* Glides upward */
+                box-shadow: 0 4px 15px grey; /* Soft shadow for depth */
+                text-decoration: none; /* No underline */
+            }
+
+
+        /* Image Hover Effect */
+        .explore-img {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #333; /* Dark border for a sleek look */
+        }
+
+            .explore-img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            }
+
+        /* Column Hover Effect */
+        .col-lg-4:hover .explore-heading {
+            color: #333; /* Dark color on hover */
+        }
+
+        .col-lg-4:hover .explore-text {
+            color: #444; /* Darker text color */
+        }
+
+        /* Featurette Section Text */
+        .featurette-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #333;
+        }
+
+            .featurette-heading span {
+                color: #333; /* Keep it consistent with the overall theme */
+            }
+
+        .featurette-divider {
+            border-top: 2px solid #333; /* Black divider lines */
+            margin: 50px 0;
+        }
+
+        /* Text Hover Effects for Featurettes */
+        .featurette-heading:hover {
+            color: #555; /* Slight color change on hover */
+        }
+
+        .featurette-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+
+
+        .featurette-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Ensures image stays within bounds */
+        }
+
+        .featurette-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image fills the container */
+            transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+        }
+
+        .featurette-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack text vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease-in-out;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .featurette-image-wrapper:hover .featurette-overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        .featurette-image-wrapper:hover .featurette-image {
+            transform: scale(1.05); /* Subtle zoom effect */
+        }
+
+        .featurette-overlay h3,
+        .featurette-overlay p {
+            margin: 5px 0; /* Adjust spacing between lines */
+            word-wrap: break-word; /* Ensure long text breaks properly */
+        }
+
+        .nav-item .dropdown-toggle::after {
+            display: none !important;
+        }
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row border-bottom pt-2 pb-2 d-flex justify-content-center align-items-center" style="background-color:linen;">
+
+
+
+
+                <div class="col-auto">
+                    <a style="font-family:'Raleway', Arial, sans-serif; color:black" href="#"  class="text-decoration-underline">Welcome to our website!</a>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg" style="color:white; background-color:black;">
+                    <div class="container-fluid pt-2 pb-2">
+                        <h2 class="ps-4"> <i style="color:linen" class="bi bi-bootstrap"></i></h2>
+                        <a class="navbar-brand ps-1" href="/Home/Index">
+
+                            <h2 style="font-family:'Raleway', Arial, sans-serif;color:White;" class="text-decoration-underline" width="100" height="60">ONDED</h2>
+                        </a>
+
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 text-center small">
+                                <li class="nav-item">
+                                    <a style="color:White; font-size:medium" class="nav-link pe-1" href="/User/DetailedProfile">
+                                        Profile
+                                    </a>
+                                </li>
+
+
+
+                                <li class="nav-item">
+                                    <a style="color:White; font-size:medium" class="nav-link pe-2" href="/User/Dashboard">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="color:White; font-size:medium" class="nav-link pe-1" href="/Notification/AllNotifications">Notifications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button style="color:White; font-size:medium" class="btn dropdown-toggle ps-2 pe-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Signin
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/User/Login">Login</a></li>
+                                            <li><a class="dropdown-item" href="/User/Register">Signup</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button style="color:White; font-size:medium" class="btn dropdown-toggle  display-6 ps-2 pe-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Settings
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/User/DeleteAccount">Delete account</a></li>
+                                            <li><a class="dropdown-item" href="/User/Profile">Edit Profile</a></li>
+                                            <li><a class="dropdown-item" href="/User/Logout">Logout</a></li>
+                                          
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+
+                        <div class="d-flex ms-auto align-items-center justify-content-evenly">
+
+                            <!-- Search Button -->
+                            <form class="d-flex align-items-center" role="search">
+                                <button type="button" style="color: White;" class="btn d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                                    @* <i style="color: White;" class="bi bi-search"></i> *@
+                                    <i style="color:White" class="bi bi-search-heart-fill "></i>
+                                    <span style="color: White;" class="ms-2">Search</span>
+                                </button>
+                            </form>
+
+
+
+
+                            <a href="https://www.threads.net/createbondswithbonded" class="text-decoration-none ms-0 me-3" style="color:black">
+                                <i style="color:White" class="bi bi-threads"></i>
+                            </a>
+                            <a href="/Chat/Index" class="text-decoration-none me-3" style="color:black">
+                                <i style="color:White" class="bi bi-chat-dots-fill"></i>
+                            </a>
+                            <a href="mailto:createbondswithbonded@gmail.com" class="text-decoration-none me-3" style="color:black">
+                                <i style="color:White" class="bi bi-envelope-fill"></i>
+                            </a>
+
+
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Offcanvas (Sliding Panel) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasSearchLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasSearchLabel">Search</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-light">
+                    <form method="post" action="/Home/Search">
+                        <div class="mb-3">
+                            <label for="searchInput" class="form-label">Search for people</label>
+                            <input type="text" class="form-control" name="searchTerm" id="searchInput" placeholder="Search...">
+                        </div>
+                        <button type="submit" class="btn btn-dark explore-btn">Search</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </header>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="height:600px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item position-relative">
+                <img src="~/images/pexels-kindelmedia-7149130.jpg"
+                     class="d-block w-100"
+                     alt="..."
+                     style="object-fit: cover; object-position: top; height: 600px;">
+                <div class="carousel-caption position-absolute translate-middle"
+                     style="top:50%; left:50%; background-color: rgba(0, 0, 0, 0.6); height: max-content; width: 60%; text-align: center;">
+                    <h5 class="text-white display-6 fw-bolder">BUILD YOUR GLOBAL CONNECTIONS</h5>
+                    <p class="text-white">Bond with like-minded people across the globe</p>
+                </div>
+            </div>
+
+            <div class="carousel-item active position-relative">
+                <video class="d-block w-100" autoplay muted loop style="object-fit: cover; height: 600px;">
+                    <source src="~/images/8530636-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption position-absolute translate-middle" style="top:50%;left:50%;background-color: rgba(0, 0, 0, 0.6); height:max-content; width:60%; text-align: center;">
+                    <h5 class="text-white display-6 fw-bolder">CONNECT TO THE PEOPLE AROUND THE WORLD</h5>
+                    <p class="text-white">WITH BONDED</p>
+                </div>
+            </div>
+
+
+            @*   <div class="carousel-item active position-relative">
+                <img src="~/images/pexels-kindelmedia-7149130.jpg" class="d-block w-100" alt="..." style="object-fit: cover; height: 800px;">
+                <div class="carousel-caption position-absolute translate-middle" style="top:60%;left:50%;background-color: rgba(0, 0, 0, 0.6); height:max-content; width:60%; text-align: center;">
+                    <h5 class="text-white display-6 fw-bolder">CONNECT TO THE PEOPLE AROUND THE WORLD</h5>
+                    <p class="text-white">WITH BONDED</p>
+                </div>
+            </div> *@
+
+
+
+            <div class="carousel-item position-relative">
+                <img src="~/images/pexels-ketut-subiyanto-4909465.jpg" class="d-block w-100" alt="..." style="object-fit: cover; height: 600px;">
+                <div class="carousel-caption position-absolute translate-middle " style="top:50%;left:50%;background-color: rgba(0, 0, 0, 0.6); height:max-content; width:60%; text-align: center;">
+                    <h5 class="text-white display-6 fw-bolder">SHARE IDEAS, INSPIRATIONS, AND MOMENTS</h5>
+                    <p class="text-white">Express yourself and grow your circle with Bonded</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container marketing mt-5">
+        <!-- Three columns of text below the carousel -->
+        <div class="row ps-3">
+            <div class="col-sm-4">
+                <img src="../images/meta15.jpg" class="bd-placeholder-img rounded-circle explore-img" width="140" height="140" alt="Grow Icon">
+                <h2 class="fw-bold explore-heading mt-2">Grow Together</h2>
+                <p class="explore-text">Collaborate with like-minded people and grow both personally and professionally through Bonded.</p>
+                <p><a class="btn explore-btn btn-dark" href="/Home/GrowTogether">Explore</a></p>
+            </div><!-- /.col-lg-4 -->
+           
+    
+            <div class="col-sm-4">
+                <img src="../images/meta14.jpg" class="bd-placeholder-img rounded-circle explore-img" width="140" height="140" alt="Share Icon">
+                <h2 class="fw-bold explore-heading mt-2">Share Ideas</h2>
+                <p class="explore-text">Express your thoughts and inspirations on Bonded. Create a space to share knowledge and creativity.</p>
+                <p><a class="btn explore-btn btn-dark" href="/Home/ShareIdeas">Explore</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-sm-4">
+                <img src="../images/meta13.jpg" class="bd-placeholder-img rounded-circle explore-img" width="140" height="140" alt="Personalization Icon">
+                <h2 class="fw-bold explore-heading mt-2">Personalize Your Experience</h2>
+                <p class="explore-text">Customize your Bonded profile to reflect who you are. Personalize your dashboard to keep track of what matters to you most.</p>
+                <p><a class="btn explore-btn btn-dark" href="/Home/GlobalConnections">Explore</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+           
+        </div><!-- /.row -->
+
+        <hr class="featurette-divider">
+
+        <!-- Featurettes Section -->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Expand Your Horizons <span class="text-body-secondary">Join Bonded today.</span></h2>
+                <p class="lead">Discover new connections, share ideas, and grow your professional network all in one place.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="featurette-image-wrapper">
+                    <img src="~/images/meta4.jpg" class="featurette-image" alt="Expand Horizons">
+                    <div class="featurette-overlay">
+                        <h3 style="font-family: 'Playfair Display', serif;">Expand Your Horizons</h3>
+                        <p>Discover new connections, <br> share ideas, and grow your network.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Make Global Connections <span class="text-body-secondary">Building bridges, not walls.</span></h2>
+                <p class="lead">Bonded lets you connect with people across the globe, fostering collaboration and creativity.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="featurette-image-wrapper">
+                    <img src="~/images/meta5.jpg" class="featurette-image" alt="Global Connections">
+                    <div class="featurette-overlay">
+                        <h3 style="font-family: 'Playfair Display', serif;">Make Global Connections</h3>
+                        <p>Building bridges, not walls.<br>Connect across the globe with Bonded.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    Inspire and Be Inspired
+                    <span class="text-body-secondary">Share your journey on Bonded.</span>
+                </h2>
+                <p class="lead">
+                    On Bonded, you can share your thoughts, get feedback, and join a thriving community of change-makers.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="featurette-image-wrapper">
+                    <img src="~/images/meta6.jpg" class="featurette-image" alt="Inspiration">
+                    <div class="featurette-overlay">
+                        <h3 style="font-family: 'Playfair Display', serif;">Inspire and Be Inspired</h3>
+                        <p>Share your journey on Bonded.<br>Join a community of change-makers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+    </div>
+
+
+    <footer>
+
+        <div class="container-fluid mb-0">
+            <div class="row border-top pt-5 pb-5 border-bottom" style="background-color: linen">
+
+                <div class="col-lg-6 ps-5 pt-3 pb-2">
+                    <b class="display-6 fw-bolder">KEEP IN CONTACT WITH US</b><br />
+                    Subscribe to get our latest updates info in a click!
+                </div>
+
+
+                <div class="col-lg-6 d-flex justify-content-center align-items-start pt-3 pb-3">
+                    <div>
+                        <label for="email" class="visually-hidden">Email</label>
+                        <div class="d-flex flex-column">
+                            <!-- Email input and subscribe button -->
+                            <div class="d-flex mb-2">
+                                <input type="text" class="form-control" id="email" placeholder="Enter Your Email" style="width: 300px;">
+                                <button type="submit" class="btn fw-bold ms-2" style="background-color: black; color: white;">Subscribe</button>
+                            </div>
+                            <!-- Build a better world text -->
+                            <div class="ms-3 me-3 text-muted">Build a better world with us</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row  mt-2 pt-3 pb-3 ps-5 pe-5 align-content-center" style="min-height: 300px; background-color:black;color:white">
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class=" mb-2 nav-item" style="color:white">About Bonded</li>
+                        <li class="mb-2 nav-item"><a class="nav-link" href="/about">Our Story</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" href="/terms-of-service">Terms of Service</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" href="/privacy-policy">Privacy Policy</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 nav-item" style="color:white">Join Us</li>
+                        <li class="mb-2 nav-item"><a class="nav-link" href="/User/Login">Sign In</a></li>
+                        <li class="mb-2 nav-item"><a class="nav-link" href="/User/Register">Create Account</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class=" mb-2">
+                            Need personalized advice? Contact our team for a free consultation.
+                        </li>
+                        <li class="mb-2 nav-item">
+                            <a class="nav-link" href="/free-advisory">
+                                Bonded Free Advisory Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li class=" mb-2">Bonded Connect</li>
+                        <li class="mb-2 nav-item">
+                            <a class="nav-link" href="/contact">
+                                International Platform
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

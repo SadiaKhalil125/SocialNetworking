@@ -1,0 +1,191 @@
+﻿@model IList<Bonded.Models.ViewModels.ChatViewModel1>
+@{
+    ViewBag.Title = "Chats";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Chats</title>
+    <style>
+        html, body {
+            height: 100%;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: linen;
+        }
+
+        footer {
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-container {
+            margin:50px auto;
+            margin-top: 70px;
+
+            width: 600px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h3 {
+            font-weight: bold;
+            color: #444;
+            text-align: center;
+        }
+
+        .chat-results {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .chat-result-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+            .chat-result-item img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+        .chat-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+
+            .chat-details a {
+                text-decoration: none;
+                color: #444;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .chat-details p {
+                margin: 5px 0 0;
+                color: #6c757d;
+                font-size: 14px;
+            }
+
+        .timestamp {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .no-results {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #999;
+        }
+
+        .delete-btn {
+           
+            font-size: 15px;
+            color: darkgrey;
+            cursor: pointer;
+        }
+
+         .delete-btn:hover {
+   
+            font-size: 15px;
+            color: black;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="profile-container">
+            <h3>Your Chats</h3>
+
+            <div class="chat-results">
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var chat in Model)
+                    {
+                        var otherUser = chat.UserTWO;
+                        <!-- Use UserTwo credentials -->
+                        var lastMessage = chat.Messages.OrderByDescending(m => m.Timestamp).FirstOrDefault();
+                        <div class="chat-result-item">
+                            <a href="@Url.Action("ChatView", "Chat", new { receiverId = chat.UserTWO.Id })">
+                                <img src="@otherUser.ProfilePicture" alt="Profile Picture">
+                            </a>
+
+                            <div class="chat-details">
+                                <a href="@Url.Action("ChatView", "Chat", new { receiverId = chat.UserTWO.Id })">
+                                    @otherUser.UserName
+                                </a>
+                                <br />
+                                <a class="fw-normal fs-6" href="@Url.Action("ChatView", "Chat", new { receiverId = chat.UserTWO.Id })">
+                                    @(lastMessage != null ? lastMessage.Text : "No messages yet")
+                                </a>
+                            </div>
+
+                            <div class="timestamp">
+                                <a class="text-decoration-none" style="color:dimgrey" href="@Url.Action("ChatView", "Chat", new { receiverId = chat.UserTWO.Id })">
+                                    @if (lastMessage?.Timestamp.Date == DateTime.Today.Date)
+                                    {
+                                        @lastMessage.Timestamp.ToString("hh:mm tt")
+                                    }
+                                    else if (lastMessage != null)
+                                    {
+                                        @lastMessage.Timestamp.ToString("MMM dd, yyyy")
+                                    }
+                                </a>
+                            </div>
+
+                            <!-- Delete Button -->
+                            <div class="ms-2">
+                                <a href="@Url.Action("DeleteChat", "Chat", new { chatId = chat.ChatId })" class="delete-btn">
+                                    <i class="bi bi-x-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    }
+                }
+                else
+                {
+                    <div class="no-results">
+                        No chats found.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

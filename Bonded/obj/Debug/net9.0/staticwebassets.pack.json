@@ -1,0 +1,685 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Bonded.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Bonded.s0v3hplt2v.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\css\\site1.css",
+      "PackagePath": "staticwebassets\\css\\site1.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\048d7399-9c60-4acf-a1c3-117b8fd36a40.png",
+      "PackagePath": "staticwebassets\\images\\048d7399-9c60-4acf-a1c3-117b8fd36a40.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\06b9522f-9403-455a-958f-e7760a6ae353.png",
+      "PackagePath": "staticwebassets\\images\\06b9522f-9403-455a-958f-e7760a6ae353.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\0a6bc672-efaa-4f03-9122-1d9e1858539e.png",
+      "PackagePath": "staticwebassets\\images\\0a6bc672-efaa-4f03-9122-1d9e1858539e.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\0f75ea73-5afa-4586-a54b-296c5d3e2902.png",
+      "PackagePath": "staticwebassets\\images\\0f75ea73-5afa-4586-a54b-296c5d3e2902.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\1.png",
+      "PackagePath": "staticwebassets\\images\\1.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\10.png",
+      "PackagePath": "staticwebassets\\images\\10.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\11.png",
+      "PackagePath": "staticwebassets\\images\\11.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\12.png",
+      "PackagePath": "staticwebassets\\images\\12.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\13.png",
+      "PackagePath": "staticwebassets\\images\\13.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\1457b1ff-33cd-44b5-97f1-a7e1c61b4a50.jpg",
+      "PackagePath": "staticwebassets\\images\\1457b1ff-33cd-44b5-97f1-a7e1c61b4a50.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\1680350718863.jfif",
+      "PackagePath": "staticwebassets\\images\\1680350718863.jfif"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\1680350718863.jpg",
+      "PackagePath": "staticwebassets\\images\\1680350718863.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\1732635486511.jpg",
+      "PackagePath": "staticwebassets\\images\\1732635486511.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\2.png",
+      "PackagePath": "staticwebassets\\images\\2.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\2ce66c72-76e9-41f9-91a6-1c3b57280701.jpeg",
+      "PackagePath": "staticwebassets\\images\\2ce66c72-76e9-41f9-91a6-1c3b57280701.jpeg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\2ndSocial.jpg",
+      "PackagePath": "staticwebassets\\images\\2ndSocial.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\3.png",
+      "PackagePath": "staticwebassets\\images\\3.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\3rdSocial.jpg",
+      "PackagePath": "staticwebassets\\images\\3rdSocial.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\43c0cb77-05fd-423d-a718-7efcd4935861.jpg",
+      "PackagePath": "staticwebassets\\images\\43c0cb77-05fd-423d-a718-7efcd4935861.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\4409642b-8d60-401d-9058-b3c564f51678.jpg",
+      "PackagePath": "staticwebassets\\images\\4409642b-8d60-401d-9058-b3c564f51678.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\48c6e7d8-7d9c-464c-aef3-bb046ee224e4.jpg",
+      "PackagePath": "staticwebassets\\images\\48c6e7d8-7d9c-464c-aef3-bb046ee224e4.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\4c4adf07-6d77-4423-a9ae-271a08ff9983.jpeg",
+      "PackagePath": "staticwebassets\\images\\4c4adf07-6d77-4423-a9ae-271a08ff9983.jpeg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\51994823-3bd7-4ad0-9a15-873727b40ce8.png",
+      "PackagePath": "staticwebassets\\images\\51994823-3bd7-4ad0-9a15-873727b40ce8.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\531a5bbe-fb11-4153-b168-5b6fdde43362.png",
+      "PackagePath": "staticwebassets\\images\\531a5bbe-fb11-4153-b168-5b6fdde43362.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\53deb3f63112d740bf326750179e0d2c.jpeg",
+      "PackagePath": "staticwebassets\\images\\53deb3f63112d740bf326750179e0d2c.jpeg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\6.png",
+      "PackagePath": "staticwebassets\\images\\6.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\6c8a8fff-d89f-48e5-9e1c-cd1b79bb99cc.png",
+      "PackagePath": "staticwebassets\\images\\6c8a8fff-d89f-48e5-9e1c-cd1b79bb99cc.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\6fe76dd7-be88-47f5-9f03-09fceaab49bb.jpg",
+      "PackagePath": "staticwebassets\\images\\6fe76dd7-be88-47f5-9f03-09fceaab49bb.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\7.png",
+      "PackagePath": "staticwebassets\\images\\7.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\70044317-915c-48cb-b915-01b4b15895f0.png",
+      "PackagePath": "staticwebassets\\images\\70044317-915c-48cb-b915-01b4b15895f0.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\7a8482eb-5833-484c-b844-62ac07cd9504.png",
+      "PackagePath": "staticwebassets\\images\\7a8482eb-5833-484c-b844-62ac07cd9504.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\7bb34e40-b484-4198-9fbd-b31f59c60dd3.png",
+      "PackagePath": "staticwebassets\\images\\7bb34e40-b484-4198-9fbd-b31f59c60dd3.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\8.png",
+      "PackagePath": "staticwebassets\\images\\8.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\8530636-uhd_3840_2160_25fps.mp4",
+      "PackagePath": "staticwebassets\\images\\8530636-uhd_3840_2160_25fps.mp4"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\855564-hd_1920_1080_24fps.mp4",
+      "PackagePath": "staticwebassets\\images\\855564-hd_1920_1080_24fps.mp4"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\8b17b45b-71c7-45bd-abb7-adfe8b8817cb.jpg",
+      "PackagePath": "staticwebassets\\images\\8b17b45b-71c7-45bd-abb7-adfe8b8817cb.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\9.png",
+      "PackagePath": "staticwebassets\\images\\9.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\Doodled Selfie Drawing.jpg",
+      "PackagePath": "staticwebassets\\images\\Doodled Selfie Drawing.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\Logo1.png",
+      "PackagePath": "staticwebassets\\images\\Logo1.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\Picsart_24-11-26_20-13-53-838.jpg",
+      "PackagePath": "staticwebassets\\images\\Picsart_24-11-26_20-13-53-838.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\Wrinked.bg.jpg",
+      "PackagePath": "staticwebassets\\images\\Wrinked.bg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\Wrinkedbg1.jpg",
+      "PackagePath": "staticwebassets\\images\\Wrinkedbg1.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\Wrinkledbg.jpg",
+      "PackagePath": "staticwebassets\\images\\Wrinkledbg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\a237301e-1597-4e38-a3d2-295b28bda2aa.png",
+      "PackagePath": "staticwebassets\\images\\a237301e-1597-4e38-a3d2-295b28bda2aa.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\a3946103-1b8b-4d80-99ea-a33123738614.jpg",
+      "PackagePath": "staticwebassets\\images\\a3946103-1b8b-4d80-99ea-a33123738614.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\b379683b-d8d6-4b38-9acf-2a8c762963d0.jpg",
+      "PackagePath": "staticwebassets\\images\\b379683b-d8d6-4b38-9acf-2a8c762963d0.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\b4327115-3555-4a35-9c87-840b1e0b3e8c.png",
+      "PackagePath": "staticwebassets\\images\\b4327115-3555-4a35-9c87-840b1e0b3e8c.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\b62e0962-5bdb-410d-8c04-4190edcbbeac.jpg",
+      "PackagePath": "staticwebassets\\images\\b62e0962-5bdb-410d-8c04-4190edcbbeac.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\bdf16c5a-b263-409e-9bb6-fd889bb1beb1.jpg",
+      "PackagePath": "staticwebassets\\images\\bdf16c5a-b263-409e-9bb6-fd889bb1beb1.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\bgforeverypage.jpg",
+      "PackagePath": "staticwebassets\\images\\bgforeverypage.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\c232f6bd-7b87-4d3e-8cab-b2a825cffa24.jfif",
+      "PackagePath": "staticwebassets\\images\\c232f6bd-7b87-4d3e-8cab-b2a825cffa24.jfif"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\c232f6bd-7b87-4d3e-8cab-b2a825cffa24.jpg",
+      "PackagePath": "staticwebassets\\images\\c232f6bd-7b87-4d3e-8cab-b2a825cffa24.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\d19826a9-64ea-4035-a98d-fffc3c8cee8e.jpg",
+      "PackagePath": "staticwebassets\\images\\d19826a9-64ea-4035-a98d-fffc3c8cee8e.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\defaultUser.jpg",
+      "PackagePath": "staticwebassets\\images\\defaultUser.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\doraemon.jpeg",
+      "PackagePath": "staticwebassets\\images\\doraemon.jpeg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\e1c72d70-8075-47e5-b516-2c75204ebfec.jpg",
+      "PackagePath": "staticwebassets\\images\\e1c72d70-8075-47e5-b516-2c75204ebfec.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\ea92d35e-d6ed-462b-93d6-3e5c375e727b.png",
+      "PackagePath": "staticwebassets\\images\\ea92d35e-d6ed-462b-93d6-3e5c375e727b.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\ece3e99a-a7af-49ad-909e-94afb778e30c.png",
+      "PackagePath": "staticwebassets\\images\\ece3e99a-a7af-49ad-909e-94afb778e30c.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\f71062db-26c6-4e3b-b8c7-ea56b00711b0.jpg",
+      "PackagePath": "staticwebassets\\images\\f71062db-26c6-4e3b-b8c7-ea56b00711b0.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\fa693bf0-c4bb-4493-83d1-aafd3b1860ed.png",
+      "PackagePath": "staticwebassets\\images\\fa693bf0-c4bb-4493-83d1-aafd3b1860ed.png"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\gptlogo.jpg",
+      "PackagePath": "staticwebassets\\images\\gptlogo.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\hopesofinal.jpg",
+      "PackagePath": "staticwebassets\\images\\hopesofinal.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\istockphoto-1995160643-1024x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1995160643-1024x1024.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\kindel2.jpg",
+      "PackagePath": "staticwebassets\\images\\kindel2.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta1.jpg",
+      "PackagePath": "staticwebassets\\images\\meta1.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta11.jpg",
+      "PackagePath": "staticwebassets\\images\\meta11.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta12.jpg",
+      "PackagePath": "staticwebassets\\images\\meta12.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta12.webp",
+      "PackagePath": "staticwebassets\\images\\meta12.webp"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta13.jpg",
+      "PackagePath": "staticwebassets\\images\\meta13.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta14.jpg",
+      "PackagePath": "staticwebassets\\images\\meta14.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta15.jpg",
+      "PackagePath": "staticwebassets\\images\\meta15.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta2.jpg",
+      "PackagePath": "staticwebassets\\images\\meta2.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta3.jpg",
+      "PackagePath": "staticwebassets\\images\\meta3.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta4.jpg",
+      "PackagePath": "staticwebassets\\images\\meta4.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta5.jpg",
+      "PackagePath": "staticwebassets\\images\\meta5.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\meta6.jpg",
+      "PackagePath": "staticwebassets\\images\\meta6.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\ogbg.jpg",
+      "PackagePath": "staticwebassets\\images\\ogbg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pexels-cedric-fauntleroy-7219363.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-cedric-fauntleroy-7219363.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pexels-ketut-subiyanto-4909465.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-ketut-subiyanto-4909465.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pexels-kindelmedia-7149130.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-kindelmedia-7149130.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pexels-minan1398-1222949.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-minan1398-1222949.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pexels-minan1398-1624565.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-minan1398-1624565.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pexels-minan1398-853168.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-minan1398-853168.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\pleasefinal.jpg",
+      "PackagePath": "staticwebassets\\images\\pleasefinal.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\purpleNewbg.jpg",
+      "PackagePath": "staticwebassets\\images\\purpleNewbg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\purplenewwithchangefontbg.jpg",
+      "PackagePath": "staticwebassets\\images\\purplenewwithchangefontbg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\social-3408791_1280.jpg",
+      "PackagePath": "staticwebassets\\images\\social-3408791_1280.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\stopbg.jpg",
+      "PackagePath": "staticwebassets\\images\\stopbg.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\stopppp.jpg",
+      "PackagePath": "staticwebassets\\images\\stopppp.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\stopppp1.jpg",
+      "PackagePath": "staticwebassets\\images\\stopppp1.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\vecteezy_abstract-background-design-background-texture-design-with_18752867-1.jpg",
+      "PackagePath": "staticwebassets\\images\\vecteezy_abstract-background-design-background-texture-design-with_18752867-1.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg",
+      "PackagePath": "staticwebassets\\images\\vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\vecteezy_asian-group-of-young-people-with-friends-and-backpacks_5247124.jpg",
+      "PackagePath": "staticwebassets\\images\\vecteezy_asian-group-of-young-people-with-friends-and-backpacks_5247124.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\vecteezy_modern-banners-for-website-design-blue-and-yellow-abstract_10599735.jpg",
+      "PackagePath": "staticwebassets\\images\\vecteezy_modern-banners-for-website-design-blue-and-yellow-abstract_10599735.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\vecteezy_three-people-silhouetted-in-front-of-sunset_1223703.jpg",
+      "PackagePath": "staticwebassets\\images\\vecteezy_three-people-silhouetted-in-front-of-sunset_1223703.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\welcome-green.jpg",
+      "PackagePath": "staticwebassets\\images\\welcome-green.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\welcome-peachpink.jpg",
+      "PackagePath": "staticwebassets\\images\\welcome-peachpink.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\images\\welcome-pinkpurple.jpg",
+      "PackagePath": "staticwebassets\\images\\welcome-pinkpurple.jpg"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\webApps\\Identity-Bonded\\Bonded\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Bonded.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Bonded.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Bonded.props",
+      "PackagePath": "build\\Bonded.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Bonded.props",
+      "PackagePath": "buildMultiTargeting\\Bonded.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Bonded.props",
+      "PackagePath": "buildTransitive\\Bonded.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
